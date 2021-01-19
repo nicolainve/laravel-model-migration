@@ -9,8 +9,16 @@
     </head>
 
     <body>
-        
-        
 
+        <ul>
+            @foreach ($cars as $car)
+                <li>
+                    <h2>{{ $car->marca }}</h2>
+                    <h3>{{ $car->modello }}</h3>
+                    <h4>{{ $car->targa }}</h4>
+                </li>
+            @endforeach
+        </ul>
+        
     </body>
 </html>
