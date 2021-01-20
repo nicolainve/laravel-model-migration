@@ -19,6 +19,19 @@
                 </li>
             @endforeach
         </ul>
+
+        <div id="app">
+            <p>Bikes</p>
+            <ul>
+                <li v-for="bike in bikes">
+                    <h2>@{{ bike.marca }}</h2>
+                    <h3>@{{ bike.modello }}</h3>
+                    <h4>@{{ bike.targa }}</h4>
+                </li>
+            </ul>
+        </div>
+
+        <script src="{{ asset('js/app.js') }}"></script>
         
     </body>
 </html>

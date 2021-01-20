@@ -18,6 +18,7 @@ class CreateBikesTable extends Migration
             $table->string('modello', 30);
             $table->string('marca', 20);
             $table->string('targa', 7);
+            $table->smallInteger('power');
             $table->timestamps();
         });
     }
